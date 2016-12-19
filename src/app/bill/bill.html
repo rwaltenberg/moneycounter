@@ -1,0 +1,5 @@
+<button class="btn bill__button" ng-style="$ctrl.bgcolor" ng-click="$ctrl.addAmount(1)">{{ $ctrl.value }}</button>
+<span class="bill__times">&times;</span>
+<input type="number" min="0" ng-change="$ctrl.amountChanged(amount)" ng-model="$ctrl.amount" />
+<span class="bill__equals">&equals;</span>
+<span class="bill__sum">{{ $ctrl.sum | number }}</span>

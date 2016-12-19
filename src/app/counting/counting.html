@@ -1,9 +1,7 @@
 <header>
-  <h1>Money Counter</h1>
+  <h1>Conta Grana</h1>
   <h2>Conte seu dinheiro com facilidade!</h2>
 </header>
 <main>
-  <form id="counting">
-
-  </form>
+  <bill ng-repeat="bill in $ctrl.bills" value="{{ bill.value }}" color="{{ bill.color }}" />
 </main>

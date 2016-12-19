@@ -4,6 +4,7 @@ counting {
 
   header {
     text-align: center;
+    margin-bottom: 40px;
 
     &:before {
       content: '';
@@ -14,7 +15,7 @@ counting {
 
       margin: 0 auto 5px;
 
-      background-image: url(money-icon.png);
+      background-image: url(images/money-icon.png);
       background-position: center center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -28,9 +29,5 @@ counting {
     h2 {
       font-size: 1.3em;
     }
-  }
-
-  main {
-
   }
 }

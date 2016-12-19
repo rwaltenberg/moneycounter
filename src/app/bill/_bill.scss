@@ -1,0 +1,69 @@
+bill {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  text-align: center;
+  font-size: 1.5em;
+
+  .bill {
+    &__button {
+      width: 70px;
+      height: 40px;
+
+      border: 1px inset rgba(0,0,0,.1);
+      border-radius: 0;
+      padding: 0 0 3px 3px;
+
+      background-image: url(images/efigie.png), url(images/paper.jpg);
+      background-size: auto 80%, 150%;
+      background-repeat: no-repeat, repeat;
+      background-position: 60% center;
+      background-blend-mode: color-burn, luminosity;
+
+      text-align: left;
+      line-height: 55px;
+    }
+
+    &__times, &__equals {
+      color: #ccc;
+      margin: 0 5px;
+    }
+
+    &__sum {
+      display: inline-block;
+      position: relative;
+
+      flex: 1 1 auto;
+
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: right;
+
+      @media screen and (min-width: 425px) {
+        &:before {
+          content: 'R$';
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      @media screen and (min-width: 375px) {
+        &:after {
+          content: ',00';
+        }
+      }
+    }
+  }
+
+  input {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 13px;
+  }
+}
