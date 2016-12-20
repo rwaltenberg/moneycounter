@@ -33,6 +33,15 @@ counting {
     h2 {
       font-size: 1.3em;
     }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.5em;
+
+      &:before {
+        width: 80px;
+        height: 80px;
+      }
+    }
   }
 
   .counting {
@@ -69,6 +78,15 @@ counting {
     small {
       font-size: 1em;
       float: right;
+    }
+
+    @media screen and (max-width: 374px) {
+      text-align: center;
+
+      small {
+        display: block;
+        float: none;
+      }
     }
   }
 }
