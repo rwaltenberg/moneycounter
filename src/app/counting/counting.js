@@ -23,7 +23,7 @@ angular
 
       function updateSum() {
         ctrl.sum = ctrl.bills.reduce((a, b) => {
-          if(angular.isObject(a)){
+          if (angular.isObject(a)) {
             a = (a.amount || 0) * a.value;
           }
 

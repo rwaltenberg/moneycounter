@@ -29,7 +29,7 @@ angular
       ctrl.amountChanged = () => {
         ctrl.sum = ctrl.amount * ctrl.value;
 
-        if (!!ctrl.onAmountChanged) {
+        if (ctrl.onAmountChanged) {
           const args = {amount: ctrl.amount, sum: ctrl.sum};
           ctrl.onAmountChanged(args);
         }
