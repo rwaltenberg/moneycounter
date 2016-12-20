@@ -8,7 +8,7 @@ angular
       ctrl.sum = 0;
 
       ctrl.bills = [
-        {value: 100, color: '#cdeaf0', amount: 5},
+        {value: 100, color: '#cdeaf0'},
         {value: 50, color: '#f8e8c7'},
         {value: 20, color: '#f9efcc'},
         {value: 10, color: '#f2d0c7'},
