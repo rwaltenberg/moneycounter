@@ -1,5 +1,9 @@
 counting {
   display: block;
+
+  max-width: 600px;
+
+  margin: 0 auto;
   padding-top: 15px;
 
   header {
@@ -46,16 +50,12 @@ counting {
     &__sum {
       display: block;
 
-      width: 100%;
+      width: calc(100% - 90px);
       margin-left: auto;
 
       font-size: 1.8em;
       font-weight: bold;
       text-align: right;
-
-      @media screen and (min-width: 768px) {
-        width: calc(100% - 150px);
-      }
     }
   }
 }
