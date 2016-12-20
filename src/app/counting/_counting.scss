@@ -30,4 +30,32 @@ counting {
       font-size: 1.3em;
     }
   }
+
+  .counting {
+
+    &__bills {
+      border-bottom: 3px solid #333;
+      margin-bottom: 5px;
+    }
+
+    &__reset {
+      margin-top: 5px;
+      float: left;
+    }
+
+    &__sum {
+      display: block;
+
+      width: 100%;
+      margin-left: auto;
+
+      font-size: 1.8em;
+      font-weight: bold;
+      text-align: right;
+
+      @media screen and (min-width: 768px) {
+        width: calc(100% - 150px);
+      }
+    }
+  }
 }

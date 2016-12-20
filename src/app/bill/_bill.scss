@@ -17,7 +17,9 @@ bill {
       border-radius: 0;
       padding: 0 0 3px 3px;
 
-      background-image: url(images/efigie.png), url(images/paper.jpg);
+      outline: none !important;
+
+      background-image: url(images/efigie.png), url(images/paper.jpg) !important;
       background-size: auto 80%, 150%;
       background-repeat: no-repeat, repeat;
       background-position: 60% center;
@@ -25,6 +27,14 @@ bill {
 
       text-align: left;
       line-height: 55px;
+
+      &:focus {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(.95)
+      }
     }
 
     &__times, &__equals {
@@ -60,10 +70,16 @@ bill {
   }
 
   input {
+    display: inline-block;
+
     width: 70px;
     height: 40px;
+
+    outline: none;
+
+    padding-left: 13px;
+
     line-height: 40px;
     text-align: center;
-    padding-left: 13px;
   }
 }
