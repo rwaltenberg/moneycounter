@@ -1,0 +1,23 @@
+fail_on_violations: true
+
+eslint:
+  enabled: true
+  config_file: ./src/.eslintrc.js
+
+jshint:
+  enabled: false
+
+ruby:
+  enabled: false
+
+coffeescript:
+  enabled: false
+
+haml:
+  enabled: false
+
+go:
+  enabled: false
+
+swift:
+  enabled: false
