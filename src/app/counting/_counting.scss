@@ -19,7 +19,7 @@ counting {
 
       margin: 0 auto 5px;
 
-      background-image: url(images/money-icon.png);
+      background-image: url('../images/money-icon.png');
       background-position: center center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -56,6 +56,19 @@ counting {
       font-size: 1.8em;
       font-weight: bold;
       text-align: right;
+    }
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+
+    color: #888;
+
+    small {
+      font-size: 1em;
+      float: right;
     }
   }
 }
