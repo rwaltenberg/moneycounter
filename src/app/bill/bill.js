@@ -7,6 +7,7 @@ angular
     bindings: {
       value: '@',
       color: '@',
+      amount: '<',
       onAmountChanged: '&'
     },
     controller() {
@@ -19,6 +20,7 @@ angular
         fontColor.saturate(10);
 
         ctrl.bgcolor = {"background-color": ctrl.color, "color": fontColor.toHexString()};
+        ctrl.sum = (ctrl.amount || 0) * ctrl.value;
       };
 
       ctrl.addAmount = amount => {

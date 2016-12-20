@@ -4,9 +4,9 @@
 </header>
 <main>
   <div class="counting__bills">
-    <bill ng-repeat="bill in $ctrl.bills" value="{{ bill.value }}" color="{{ bill.color }}" on-amount-changed="$ctrl.updateAmount($index, amount)" />
+    <bill ng-repeat="bill in $ctrl.bills" value="{{ bill.value }}" color="{{ bill.color }}" amount="bill.amount" on-amount-changed="$ctrl.updateAmount($index, amount)" />
   </div>
-  <button ng-click="reset()" class="btn btn-sm btn-default counting__reset">Limpar</button>
+  <button ng-click="$ctrl.reset()" class="btn btn-sm btn-danger counting__reset">Limpar</button>
   <span class="counting__sum">
     R$ {{ $ctrl.sum | number:2 }}
   </span>
